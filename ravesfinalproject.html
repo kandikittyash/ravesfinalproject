@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDC 🎉</title>
+    <style>
+      h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 6rem;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 25px 50px;
+
+}
+.headliner{
+display: block;
+text-align: center;
+font-weight: normal;
+border-style: dashed;
+border-color: whitesmoke;
+animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.edc{
+  color: white;
+  line-height: 32px;
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+  
+.carnival{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 50px;
+}
+button{
+display: block;
+margin: auto;
+background: #5E5DF0;
+border-radius: 999px;
+box-shadow: #5E5DF0 0 10px 20px -10px;
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+font-size: 30px;
+font-weight: 700;
+line-height: 24px;
+opacity: 1;
+outline: 0 solid transparent;
+padding: 8px 18px;
+user-select: none;
+-webkit-user-select: none;
+width: fit-content;
+word-break: break-word;
+border: 0;
+animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+button:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+img{
+  display: block;
+  margin: auto;
+  width: 50%;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: #7e57c2;
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+html{
+  background-color: #cebeff;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="headliner"><h1><strong>This is EDC</strong></h1>
+    <h2><span class="carnival"<em>also know as Electric Daisy Carnival</em></span></h2>
+  
+    </div>
+</br>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/275/original/edc1.jpeg?1667449567" alt="Kinetic Field at EDC">
+    <br>
+    <p>
+      <span class="edc">EDC is a music festival held by Insomniac.
+      <br>
+       This festival takes place in
+      Las Vegas, Nevada at the Las Vegas Speedway.
+      <br>
+       It is held annually during
+      May 20-23. 
+      <br>
+      To attend the festival, you have to be 18+. 
+      <br>
+      If you want to view the official EDC website, please go <a href="https://lasvegas.electricdaisycarnival.com/" target="_blank">here!</a>
+    </p>
+    <hr>
+    <br>
+   <button>Sign Up to Buy Tickets</button>
+   <script>
+    function buyticket() {
+        let name = prompt("What's your first name?");
+        let age = prompt("How old are you?");
+        if (age > 18) {
+        alert("Please go to https://edclasvegas.frontgatetickets.com to buy the ticket!");
+        } else {
+         alert( "You can only buy tickets if you are 18+. Please come back when you've turned 18!");
+        }
+      }
+     let buyTickets = document.querySelector("button");
+      buyTickets.addEventListener("click", buyticket);
+   </script>
+  </body>
+</html>
